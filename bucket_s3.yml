@@ -1,0 +1,18 @@
+## template cloudformation
+
+Description: Cria um bucket S3
+
+Resources: 
+
+  MeuPrimeiroBucket:
+    Type: AWS::S3::Bucket
+    Properties: 
+      BucketName: asf-meu-primeiro-bucket
+
+      BucketEncryption: 
+        ServerSideEncryptionConfiguration: 
+          - ServerSideEncryptionByDefault: 
+              SSEAlgorithm: AES256
+
+
+    
